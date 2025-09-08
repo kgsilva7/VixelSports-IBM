@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="vixel sports/" type="image/x-icon">
+    <title>Sign In e Sign Up Form</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="login.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="index.html" class="sign-in-form">
+                    <h2 class="title">Sign In</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+                    <p class="social-text">Or sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+                <form action="" class="signup-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Sign Up" class="btn solid">
+                    <p class="social-text">Or sign up with social platforms</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Novo aqui?</h3>
+                    <p>Venha fazer parte da melhor em roupas esportivas</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+                </div>
+                
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Já possui uma conta?</h3>
+                    <p>Continue navegando na melhor em roupas esportivas</p>
+                    <button class="btn transparent" id="sign-in-btn">Sign In</button>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+ 
+    <script>
+        const signUpButton = document.getElementById('sign-up-btn');
+        const signInButton = document.getElementById('sign-in-btn');
+        const container = document.querySelector('.container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('sign-up-mode');
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('sign-up-mode');
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

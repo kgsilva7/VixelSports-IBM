@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Produto - Vixel Sports</title>
+    <link rel="stylesheet" href="styles/paginaprodutos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="product-container">
+        <button class="back-btn" onclick="window.history.back()">
+            <i class="fas fa-arrow-left"></i> Voltar
+        </button>
+        
+        <div class="product-details">
+            <div class="product-image-container">
+                <img id="product-image" src="" alt="Imagem do Produto">
+            </div>
+            
+            <div class="product-info">
+                <h1 id="product-name"></h1>
+                <div class="price-container">
+                    <span class="price-label">Preço:</span>
+                    <span class="price" id="product-price"></span>
+                </div>
+                
+                <div class="size-selection">
+                    <label for="size">Tamanho:</label>
+                    <select id="size">
+                        <option value="GG"selected></option>
+                        <option value="PP"selected>pp</option>
+                        <option value="P"selected>P</option>
+                        <option value="M"selected>M</option>
+                        <option value="G"selected>G</option>
+                        <option value="GG"selected>GG</option>
+                        <option value="GGX"selected>GGx</option>
+                    </select>
+                </div>
+                
+                <div class="quantity-selection">
+                    <label for="quantity">Quantidade:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="adjustQuantity(-1)">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button class="quantity-btn" onclick="adjustQuantity(1)">+</button>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="add-to-cart-btn" id="add-to-cart">
+                        <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Descrição do Produto</h3>
+                    <p>Conjunto esportivo de alta qualidade, perfeito para treinos intensos. Tecido respirável e confortável.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-header">
+            <h2>Seu Carrinho</h2>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Itens serão inseridos aqui via JavaScript -->
+        </div>
+        
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">R$ 0,00</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">
+                <i class="fas fa-credit-card"></i> Finalizar Compra
+            </button>
+        </div>
+    </div>
+    
+    <div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+    <script src="js/cart.js"></script>
+    <script>
+        // Carregar dados do produto
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const product = {
+                name: params.get('name'),
+                price: parseFloat(params.get('price')),
+                image: params.get('image')
+            };
+            
+            if (product.name && product.price && product.image) {
+                document.getElementById('product-name').textContent = product.name;
+                document.getElementById('product-price').textContent = `R$ ${product.price.toFixed(2)}`;
+                document.getElementById('product-image').src = product.image;
+                
+                // Configurar botão de adicionar ao carrinho
+                document.getElementById('add-to-cart').addEventListener('click', function() {
+                    addToCart(
+                        product.name,
+                        product.price,
+                        product.image,
+                        document.getElementById('size').value,
+                        parseInt(document.getElementById('quantity').value)
+                    );
+                });
+            } else {
+                window.location.href = 'produtos.html';
+            }
+        });
+        
+        // Ajustar quantidade
+        function adjustQuantity(change) {
+            const quantityInput = document.getElementById('quantity');
+            let newValue = parseInt(quantityInput.value) + change;
+            if (newValue < 1) newValue = 1;
+            quantityInput.value = newValue;
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ /* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remover o círculo azul atrás do cursor (efeito de foco) */
+*:focus {
+  outline: none;
+}
+
+/* Estilizar o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color:#082550;  
+  margin-top: 50px; /* Margem no topo para criar espaço */
+  padding: 20px;
+}
+
+/* Barra Horizontal */
+#home {
+  display: flex;
+  align-items: center;
+  background-color: #082550; /* Azul escuro */
+  padding: 20px;
+  height: 150px; /* Altura da barra */
+  width: 100%; /* Ocupa toda a largura da tela */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #082550; /* Texto branco */
+}
+
+/* Conteúdo da Barra (CTA) */
+#cta {
+  flex: 1;
+  max-width: 60%; /* Largura maior para o conteúdo */
+  padding: 20px;
+  color: #fff;
+}
+
+#cta h1.title {
+  font-size: 1.5rem; /* Tamanho do título */
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#cta p.description {
+  font-size: 1rem; /* Tamanho da descrição */
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Botões da Barra */
+#cta_buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #082550; 
+}
+
+.btn_default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* Fundo branco */
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #082550; /* Texto azul escuro */
+  text-transform: uppercase; /* Texto em maiúsculas */
+}
+ /* Estilizar o link com a classe btn_default */
+a.btn_default {
+  color: #082550; /* Texto azul escuro */
+  text-decoration: none; /* Remover sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 16px; /* Tamanho da fonte */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  display: inline-block; /* Para aplicar padding e margin */
+  padding: 10px 20px; /* Espaçamento interno */
+  background-color: #fff; /* Fundo branco */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover */
+a.btn_default:hover {
+  background-color: #dfebf1; /* Fundo azul claro ao passar o mouse */
+}
+/* Botões de Redes Sociais */
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+  color: #082550; 
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff; /* Fundo branco */
+  font-size: 1.25rem;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #082550; /* Texto azul escuro */
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+}
+
+ 
+#banner {
+  flex: 1;
+  max-width: 40%; /* Largura reduzida do carrossel */
+  height: 100%; /* Ocupa toda a altura da barra */
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end; /* Alinha o carrossel à direita */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.carousel-images {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+  gap: 10px; /* Espaço entre as imagens */
+}
+
+.carousel-images img {
+  width: 80px; /* Largura reduzida das imagens */
+  height: 80px; /* Altura reduzida das imagens */
+  object-fit: cover; /* Garante que as imagens cubram o espaço */
+  border-radius: 10px;
+  display: none;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+ 
+.content {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+   
+  color: #fff;/* Azul escuro */
+}
+
+.content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* Estilizar a seção de contato */
+.contact-info {
+  margin-top: 20px;
+  font-size: 1.1em;
+   color: #fff;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+ 
+ 
+button {
+  background-color: #fff; /* Fundo branco */
+  color: #082550; /* Texto azul escuro */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remover borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor ao passar o mouse */
+  margin: 10px 5px; /* Margem entre os botões */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+  background-color: #dfebf1;
+  color: #082550; /* Fundo azul claro ao passar o mouse */
+}
+
+/* Estilizar o rodapé */
+.footer {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #082550; /* Azul escuro */
+  color: white;
+  text-align: center;
+  border-top: 2px solid #051a3a; /* Borda superior mais escura */
+}
+
+.footer p {
+  margin: 0;
+}
+footer {
+  background-color: #041947;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+footer .content {
+  z-index: 10;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  flex: 1 1 250px;
+  margin: 20px 0;
+}
+
+footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #9ab3eb;
+}
+
+footer p {
+  line-height: 1.6;
+  font-size: 0.9em;
+}
+
+footer .col ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .col ul li {
+  margin-bottom: 10px;
+}
+
+footer .col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.3s;
+}
+
+footer .col ul li a:hover {
+  color: #9ab3eb;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+footer .social-icons li {
+  display: inline;
+}
+
+footer .social-icons li a {
+  color: #ffffff;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+footer .social-icons li a:hover {
+  color: #9ab3eb;
+}
+
+footer .col p i {
+  margin-right: 8px;
+  color: #9ab3eb;
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid #9ab3eb;
+  padding-top: 10px;
+  color: #d9d9d9;
+}

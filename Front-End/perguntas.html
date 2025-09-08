@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="vixel sports/logo_branca-removebg-preview.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles/comentarios.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styles/promoções.css">
+        <link rel="stylesheet" href="styles/index.html">
+        <link rel="stylesheet" href="styles/navbar.css">
+       
+        <link rel="stylesheet" href="styles/perguntas.css">
+    </head>
+<body>
+    <header1>
+        <a href="#" class="logo"><img src="vixel sports/logo_branca-removebg-preview.png" width="50px" alt="Logo"></a>
+        <div id="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="navbar" id="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleSubmenu()">Produtos</a>
+                <ul id="submenu" class="hidden">
+                    <li><a href="produtos.html">Masculino</a></li>
+                    <li><a href="produtosfm.html">Feminino</a></li>
+                </ul>
+            </li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="Contate-nos.html">Contato</a></li>
+            <li><a href="perguntas.html">Dúvidas</a></li>
+        </ul>
+        <div class="main">
+            <a href="#" class="search" onclick="toggleSearchBar()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#" id="cart-icon" onclick="toggleCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="login.html" class="user"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header1>
+    <div id="search-bar" class="search-bar hidden">
+        <input type="text" placeholder="Algum produto expecifico ?">
+        <button type="button">Pesquisar</button>
+    </div>
+    <h1>FAQ - Vixel Sports</h1>
+    <div class="faq-container">
+        
+        <div class="faq-item">
+            <div class="faq-question">1. Quais tipos de roupas esportivas vocês vendem?</div>
+            <div class="faq-answer">Vendemos camisetas, calças, shorts, jaquetas e acessórios para diversas modalidades esportivas.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">2. Como posso fazer um pedido?</div>
+            <div class="faq-answer">Você pode fazer seu pedido diretamente em nosso site, adicionando os produtos ao carrinho e seguindo as instruções de checkout.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">3. Vocês oferecem frete grátis?</div>
+            <div class="faq-answer">Sim, oferecemos frete grátis em pedidos acima de R$200.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">4. Como posso rastrear meu pedido?</div>
+            <div class="faq-answer">Após o envio, você receberá um e-mail com um código de rastreamento para acompanhar seu pedido.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">5. Vocês aceitam devoluções?</div>
+            <div class="faq-answer">Sim, aceitamos devoluções em até 30 dias após a compra, desde que os produtos estejam em condições originais.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">6. Qual é o prazo de entrega?</div>
+            <div class="faq-answer">O prazo de entrega varia de 5 a 10 dias úteis, dependendo da sua localização.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">7. Como posso entrar em contato com o atendimento ao cliente?</div>
+            <div class="faq-answer">Você pode nos contatar pelo e-mail suporte@vixelsports.com ou pelo telefone (11) 1234-5678.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">8. Vocês têm loja física?</div>
+            <div class="faq-answer">Atualmente, vendemos apenas online, mas estamos planejando abrir lojas físicas em breve.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">9. Quais formas de pagamento vocês aceitam?</div>
+            <div class="faq-answer">Aceitamos cartões de crédito, débito, boleto e PayPal.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">10. Como posso encontrar meu tamanho?</div>
+            <div class="faq-answer">Temos uma tabela de tamanhos disponível em cada página de produto para ajudá-lo a escolher o tamanho ideal.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">11. Vocês têm roupas para crianças?</div>
+            <div class="faq-answer">Sim, temos uma linha de roupas esportivas para crianças em nosso site.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">12. Posso cancelar meu pedido?</div>
+            <div class="faq-answer">Sim, você pode cancelar seu pedido antes que ele seja enviado. Basta entrar em contato com nosso atendimento ao cliente.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">13. O que fazer se meu pedido chegar danificado?</div>
+            <div class="faq-answer">Caso seu pedido chegue danificado, entre em contato conosco imediatamente para resolvermos a situação.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">14. Vocês oferecem produtos personalizados?</div>
+            <div class="faq-answer">Sim, oferecemos a opção de personalização em alguns produtos. Verifique as opções na página do produto.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">15. Como sei se o meu pagamento foi confirmado?</div>
+            <div class="faq-answer">Você receberá um e-mail de confirmação assim que o pagamento for processado.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">16. Quais são as políticas de troca?</div>
+            <div class="faq-answer">Você pode trocar produtos em até 30 dias, desde que estejam em perfeitas condições.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">17. Vocês têm programa de fidelidade?</div>
+            <div class="faq-answer">Sim, temos um programa de fidelidade que oferece descontos e promoções exclusivas para clientes cadastrados.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">18. Como posso me inscrever na newsletter?</div>
+            <div class="faq-answer">Você pode se inscrever na newsletter no rodapé do nosso site, inserindo seu e-mail.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">19. Vocês têm descontos para compras em grupo?</div>
+            <div class="faq-answer">Sim, oferecemos descontos especiais para compras em grupo. Entre em contato conosco para mais detalhes.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">20. Quais cuidados devo ter com as roupas esportivas?</div>
+            <div class="faq-answer">Recomendamos seguir as instruções de lavagem e secagem na etiqueta de cada produto para garantir sua durabilidade.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">21. Vocês têm roupas para atividades específicas, como corrida ou yoga?</div>
+            <div class="faq-answer">Sim, temos linhas específicas para diferentes atividades, incluindo corrida, yoga, musculação e muito mais.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">22. Como posso saber sobre novas coleções?</div>
+            <div class="faq-answer">Fique atento ao nosso site e siga nossas redes sociais para saber sobre lançamentos e novas coleções.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">23. Vocês têm opções sustentáveis?</div>
+            <div class="faq-answer">Sim, estamos comprometidos com a sustentabilidade e oferecemos uma linha de produtos feitos com materiais ecológicos.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">24. Como funciona o processo de fabricação das roupas?</div>
+            <div class="faq-answer">Nossas roupas são produzidas com materiais de alta qualidade, seguindo rigorosos padrões de controle e sustentabilidade.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">25. Vocês realizam parcerias com influenciadores?</div>
+            <div class="faq-answer">Sim, estamos abertos a parcerias com influenciadores. Entre em contato para mais informações.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">26. Posso comprar um vale-presente?</div>
+            <div class="faq-answer">Sim, oferecemos vales-presente disponíveis em nosso site. Você pode escolher o valor desejado.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">27. Vocês têm um blog com dicas sobre esportes?</div>
+            <div class="faq-answer">Sim, temos um blog onde compartilhamos dicas de esportes, treinos e bem-estar. Confira!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">28. O que diferencia a Vixel Sports de outras marcas?</div>
+            <div class="faq-answer">A Vixel Sports se destaca pela qualidade dos materiais, design inovador e compromisso com a sustentabilidade.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">29. Vocês têm roupas de alta performance?</div>
+            <div class="faq-answer">Sim, oferecemos uma linha de roupas de alta performance desenvolvidas para atletas e praticantes de esportes.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">30. Como posso deixar feedback sobre um produto?</div>
+            <div class="faq-answer">Você pode deixar seu feedback diretamente na página do produto ou entrar em contato com nosso atendimento ao cliente.</div>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <h3>Sobre a Vixel Sports</h3>
+                    <p>Nossa missão é entregar <br> 
+                    qualidade comforto e estilo <br>
+                     por um preço que cabe no seu bolso <br> </p>
+                     
+                </div>
+                <div class="col">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                 </div>
+                <div class="col">
+                    <h3>Redes Sociais</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></atwitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></atwitter"></i></a></li>
+                    </ul>
+                    <ul>
+                        <p><i class="fas fa-envelope"></i> vixelsports@gmail.com</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Vixel Sports. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        
+        const questions = document.querySelectorAll('.faq-question');
+
+        
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+<script src="script.js"></script>
+<script src="pesquisa.js"></script>
+</body>
+</html>
