@@ -130,4 +130,15 @@ class Produto
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 }
+public function inserir($dados) {
+    $conn = Conectar::getInstancia();
+    $sql = "INSERT INTO produtos (nome, categoria, tamanho, cor, preco, quantidade_estoque, descricao, genero, id_fornecedor) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    return $stmt->execute([
+        $dados['nome'], $dados['categoria'], $dados['tamanho'], 
+        $dados['cor'], $dados['preco'], $dados['quantidade_estoque'],
+        $dados['descricao'], $dados['genero'], $dados['id_fornecedor']
+    ]);
+}
 ?>
