@@ -325,9 +325,22 @@
 include_once 'produto.php';
 $produtoObj = new Produto();
 $produtosBD = $produtoObj->consultar();
+$produtos = array();
+foreach ($produtosBD as $produto) {
+    $produtos[] = array(
+        'id' => $produto['id_produto'],
+        'nome' => $produto['nome'],
+        'categoria' => $produto['categoria'],
+        'tamanho' => $produto['tamanho'],
+        'cor' => $produto['cor'],
+        'preco' => $produto['preco'],
+        'genero' => $produto['genero'],
+        'imagem' => '' 
+    );
+}
 ?>    
     <script>
-        const produtos = <?php echo json_encode($produtosBD); ?>;
+        const produtos = <?php echo json_encode($produtos); ?>;
         const searchForm = document.getElementById('search-form');
         const searchInput = document.getElementById('search-input');
         const categoryFilter = document.getElementById('category-filter');
