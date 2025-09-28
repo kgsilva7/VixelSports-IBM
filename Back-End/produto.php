@@ -1,101 +1,102 @@
 <?php
+include_once 'conectar.php';
 
 class Produto
 {
-private $id_produto;
-private $nome;
-private $categoria;
-private $tamanho;
-private $cor;
-private $preco;
-private $quantidade_estoque;
-private $descricao;
-private $genero;
-private $id_fornecedor;
+    private $id_produto;
+    private $nome;
+    private $categoria;
+    private $tamanho;
+    private $cor;
+    private $preco;
+    private $quantidade_estoque;
+    private $descricao;
+    private $genero;
+    private $id_fornecedor;
 
-private $conn;
+    public function getid_produto() {
+        return $this->id_produto;
+    }
 
-public function getid_produto() {
+    public function setId($id_produto) { 
+        $this->id_produto = $id_produto; 
+    }
 
-    return $this->id_produto;
-}
+    public function getnome() {
+        return $this->nome;
+    }
 
-public function setId ($id_produto) { 
-    $this->id_produto = $id_produto; }
+    public function setNome($nome) { 
+        $this->nome = $nome; 
+    }
 
-public function getnome() {
+    public function getcategoria() {
+        return $this->categoria;
+    }
 
-    return $this->nome;
-}
+    public function setCategoria($categoria) { 
+        $this->categoria = $categoria; 
+    }
 
-public function setNome ($nome) { 
-    $this->nome = $nome; }
+    public function gettamanho() {
+        return $this->tamanho;
+    }
 
-public function getcategoria() {
+    public function setTamanho($tamanho) { 
+        $this->tamanho = $tamanho; 
+    }
 
-    return $this->categoria;
-}
+    public function getcor() {
+        return $this->cor;
+    }
 
-public function setCategoria ($categoria) { 
-    $this->categoria = $categoria; }
+    public function setCor($cor) { 
+        $this->cor = $cor; 
+    }
 
-public function gettamanho() {
+    public function getpreco() {
+        return $this->preco;
+    }
 
-    return $this->tamanho;
-}
+    public function setPreco($preco) { 
+        $this->preco = $preco; 
+    }
 
-public function setTamanho ($tamanho) { 
-    $this->tamanho = $tamanho; }
+    public function getquantidade_estoque() {
+        return $this->quantidade_estoque;
+    }
 
-public function getcor() {
+    public function setQuantidade_estoque($quantidade_estoque) { 
+        $this->quantidade_estoque = $quantidade_estoque; 
+    }
 
-    return $this->cor;
-}
+    public function getdescricao() {
+        return $this->descricao;
+    }
 
-public function setCor ($cor) { 
-    $this->cor = $cor; }
+    public function setDescricao($descricao) { 
+        $this->descricao = $descricao; 
+    }
 
-public function getpreco() {
+    public function getgenero() {
+        return $this->genero;
+    }
 
-    return $this->preco;
-}
+    public function setGenero($genero) { 
+        $this->genero = $genero; 
+    }
 
-public function setPreco ($preco) { 
-    $this->preco = $preco; }
+    public function getid_fornecedor() {
+        return $this->id_fornecedor;
+    }
 
-public function getquantidade_estoque() {
-
-    return $this->quantidade_estoque;
-}
-
-public function setQuantidade_estoque ($quantidade_estoque) { 
-    $this->quantidade_estoque = $quantidade_estoque; }
-
-public function getdescricao() {
-
-    return $this->descricao;
-}
-
-public function setDescricao ($descricao) { 
-    $this->descricao = $descricao; }
-
-public function getgenero() {
-
-    return $this->genero;
-}
-
-public function setGenero ($genero) { 
-    $this->genero = $genero; }
-
-public function getid_fornecedor() {
-
-    return $this->id_fornecedor;
-}
-public function setId_fornecedor ($id_fornecedor) { 
-    $this->id_fornecedor = $id_fornecedor; }
-public function consultar($nome = null)
+    public function setId_fornecedor($id_fornecedor) { 
+        $this->id_fornecedor = $id_fornecedor; 
+    }
+    public function consultar($nome = null)
     {
-        $conn = Conectar::getInstancia();    
+        $conn = Conectar::getInstancia();
+        
         if ($nome) {
             $sql = "SELECT * FROM produtos WHERE nome LIKE :nome";
             $stmt = $conn->prepare($sql);
@@ -103,19 +104,12 @@ public function consultar($nome = null)
         } else {
             $sql = "SELECT * FROM produtos";
             $stmt = $conn->prepare($sql);
-        }  
+        }
+        
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-    public function consultarPorId($id)
-    {
-        $conn = Conectar::getInstancia();
-        $sql = "SELECT * FROM produtos WHERE id_produto = :id";
-        $stmt = $conn->prepare($sql);
-        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-        $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC);
-    }
+
     public function consultarPorCategoria($categoria)
     {
         $conn = Conectar::getInstancia();
@@ -125,7 +119,15 @@ public function consultar($nome = null)
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-}
-?>    
+
+    public function consultarPorId($id)
+    {
+        $conn = Conectar::getInstancia();
+        $sql = "SELECT * FROM produtos WHERE id_produto = :id";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }
 ?>
