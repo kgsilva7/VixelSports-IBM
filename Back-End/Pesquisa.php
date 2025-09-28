@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa de Produtos - Vixel Sports</title>
+    <title>Pesquisa de Produtos</title>
     <style>
         * {
             margin: 0;
@@ -321,89 +321,13 @@
             </div>
         </div>
     </div>
+<?php
+include_once 'produto.php';
+$produtoObj = new Produto();
+$produtosBD = $produtoObj->consultar();
+?>    
     <script>
-        const produtos = [
-            {
-                id: 1,
-                nome: "Camiseta Básica",
-                categoria: "Roupas",
-                tamanho: "M",
-                cor: "Preta",
-                preco: 74.9,
-                genero: "U",
-                imagem: "vixel sports/produtos/masc/camisetas/camisa1.png"
-            },
-            {
-                id: 2,
-                nome: "Camiseta Estampada",
-                categoria: "Roupas",
-                tamanho: "G",
-                cor: "Branca",
-                preco: 49.9,
-                genero: "M",
-                imagem: "vixel sports/produtos/masc/camisetas/camisa2.png"
-            },
-            {
-                id: 3,
-                nome: "Camiseta Dry Fit",
-                categoria: "Roupas",
-                tamanho: "M",
-                cor: "Preto",
-                preco: 74.9,
-                genero: "M",
-                imagem: "vixel sports/produtos/masc/camisetas/camisa3.png"
-            },
-            {
-                id: 4,
-                nome: "Calça Legging Fitness",
-                categoria: "Roupas",
-                tamanho: "38",
-                cor: "Preta",
-                preco: 89.9,
-                genero: "F",
-                imagem: "vixel sports/produtos/fem/calcas/legging.png"
-            },
-            {
-                id: 5,
-                nome: "Tênis Esportivo",
-                categoria: "Calçados",
-                tamanho: "41",
-                cor: "Branco",
-                preco: 199.9,
-                genero: "U",
-                imagem: "vixel sports/produtos/calcados/tenis1.png"
-            },
-            {
-                id: 6,
-                nome: "Tênis Casual",
-                categoria: "Calçados",
-                tamanho: "39",
-                cor: "Preto",
-                preco: 319.9,
-                genero: "F",
-                imagem: "vixel sports/produtos/calcados/tenis2.png"
-            },
-            {
-                id: 7,
-                nome: "Top Esportivo",
-                categoria: "Roupas",
-                tamanho: "M",
-                cor: "Branco",
-                preco: 119.9,
-                genero: "F",
-                imagem: "vixel sports/produtos/fem/tops/top1.png"
-            },
-            {
-                id: 8,
-                nome: "Jaqueta Corta-Vento",
-                categoria: "Roupas",
-                tamanho: "G",
-                cor: "Vermelha",
-                preco: 259.9,
-                genero: "M",
-                imagem: "vixel sports/produtos/masc/jaquetas/jaqueta1.png"
-            }
-        ];
+        const produtos = <?php echo json_encode($produtosBD); ?>;
         const searchForm = document.getElementById('search-form');
         const searchInput = document.getElementById('search-input');
         const categoryFilter = document.getElementById('category-filter');
