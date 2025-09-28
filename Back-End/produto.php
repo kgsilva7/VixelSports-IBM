@@ -91,8 +91,41 @@ public function getid_fornecedor() {
 
     return $this->id_fornecedor;
 }
-
 public function setId_fornecedor ($id_fornecedor) { 
     $this->id_fornecedor = $id_fornecedor; }
+public function consultar($nome = null)
+    {
+        $conn = Conectar::getInstancia();    
+        if ($nome) {
+            $sql = "SELECT * FROM produtos WHERE nome LIKE :nome";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindValue(':nome', '%' . $nome . '%', PDO::PARAM_STR);
+        } else {
+            $sql = "SELECT * FROM produtos";
+            $stmt = $conn->prepare($sql);
+        }  
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public function consultarPorId($id)
+    {
+        $conn = Conectar::getInstancia();
+        $sql = "SELECT * FROM produtos WHERE id_produto = :id";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+    public function consultarPorCategoria($categoria)
+    {
+        $conn = Conectar::getInstancia();
+        $sql = "SELECT * FROM produtos WHERE categoria LIKE :categoria";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(':categoria', '%' . $categoria . '%', PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+?>    
 }
 ?>
