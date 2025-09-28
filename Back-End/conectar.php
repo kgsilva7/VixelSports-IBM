@@ -7,17 +7,18 @@ class Conectar extends PDO
     private $usuario = "root";
     private $senha = "";
     private $db = "produtosvixel";
-
+    
     public function __construct()
     {
         try {
             parent::__construct("mysql:host=$this->host;dbname=$this->db", $this->usuario, $this->senha);
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $e) {
-            echo 'Erro na conexão: ' . $e->getMessage();
-            exit();
+        } catch (Exception $e) {
+            echo 'Erro ao conectar: ' . $e->getMessage();
+            exit();  
         }
     }
+    
     public static function getInstancia()
     {
         if (!isset(self::$instancia)) {
@@ -30,6 +31,7 @@ class Conectar extends PDO
         }
         return self::$instancia;
     }
+    
     public function sql($query, $params = [])
     {
         try {
