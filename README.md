@@ -14,8 +14,8 @@ Este é um projeto para a IBM com Front-End e Back-End de uma loja de roupas cha
 * **Página de dúvidas frequentes (FAQ)**.
 * **Página de contato (Contate-nos)** para suporte direto.
 * **Página Sobre Nós** contando a história da marca Vixel Sports.
-* **Carrinho de compras e finalização de pedidos para a venda.
-* **Aplicativo da loja mobile funcional e responsivo para o cliente.
+* Carrinho de compras e finalização de pedidos para a venda.
+* Aplicativo da loja mobile funcional e responsivo para o cliente.
 
 ---
 
