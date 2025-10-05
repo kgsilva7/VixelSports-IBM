@@ -7,25 +7,25 @@ Este é um projeto para a IBM com Front-End e Back-End de uma loja de roupas cha
 ## Funcionalidades:
 
 * **Página inicial** com destaques e promoções em tempo real.
-* **Barra de pesquisa** para localizar produtos rapidamente.
-* **Login e cadastro de usuários**.
+* **Barra de pesquisa** para localizar os produtos rapidamente.
+* **Login e cadastro de usuários** para criar uma conta no site.
 * **Catálogo de produtos** separados por **masculino** e **feminino**.
-* **Tabela de preços** atualizada.
+* **Tabela de preços** atualizada para acessibilidade dos clientes.
 * **Página de dúvidas frequentes (FAQ)**.
 * **Página de contato (Contate-nos)** para suporte direto.
 * **Página Sobre Nós** contando a história da marca Vixel Sports.
-* Carrinho de compras e finalização de pedidos para a venda.
-* Aplicativo da loja mobile funcional e responsivo para o cliente.
+* **Carrinho de compras** e finalização de pedidos para a venda.
+* **Aplicativo** da loja mobile funcional e responsivo para o cliente.
 
 ---
 
 ## Tecnologias Utilizadas:
 
-* **HTML5** → Estrutura das páginas.
-* **CSS3** → Estilização responsiva e moderna.
+* **HTML5** → Estrutura das páginas e esboço do site.
+* **CSS3** → Estilização responsiva e moderna para dar vida á loja.
 * **JavaScript** → Funcionalidades interativas no Front-End.
 * **PHP** → Back-End da aplicação e lógica do servidor.
-* **Kotlin** → Aplicativo mobile complementar (Android).
+* **Kotlin** → Aplicativo mobile complementar de Android.
 * **MySQL** → Banco de dados relacional para armazenamento de informações de produtos e usuários.
 * **XAMPP** → Ambiente local para rodar o servidor e o banco de dados.
 
