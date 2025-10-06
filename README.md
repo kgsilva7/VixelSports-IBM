@@ -4,7 +4,7 @@ Este é um projeto para a IBM com Front-End e Back-End de uma loja de roupas cha
 
 ---
 
-## Funcionalidades:
+## Funcionalidades: 
 
 * **Página inicial** com destaques e promoções em tempo real.
 * **Barra de pesquisa** para localizar os produtos rapidamente.
