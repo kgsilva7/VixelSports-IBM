@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Masculinos - Vixel Sports</title>
+    <link rel="stylesheet" href="styles/produtos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="Imagens do Site/logo/logo_vixel-removebg-preview.png" alt="Vixel Sports">
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link active">Produtos <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="produtos.html" class="dropdown-item active">Masculino</a>
+                            <a href="produtosfm.html" class="dropdown-item">Feminino</a>
+                            
+                        </div>
+                    </li>
+                    <li><a href="sobrenos.html" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="contate-nos.html" class="nav-link">Contato</a></li>
+                    <li><a href="perguntas.html" class="nav-link">Dúvidas</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                </div>
+                <a href="login.html" class="action-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="carrinho.html" class="action-icon" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+     
+    <section class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Produtos Masculinos</h1>
+                <p class="page-subtitle">Encontre as melhores peças para seu treino</p>
+            </div>
+            
+            <div class="products-layout">
+                <aside class="products-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Categorias</h3>
+                        <ul class="filter-options">
+                            <li><a href="#" class="active">Todos os Produtos</a></li>
+                            <li><a href="#">Camisetas</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Tênis</a></li>
+                            <li><a href="#">Acessórios</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Filtrar por Preço</h3>
+                        <input type="range" class="price-range" min="0" max="500" value="500">
+                        <div class="price-values">
+                            <span>R$ 0</span>
+                            <span>R$ 500</span>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Tamanhos</h3>
+                        <div class="size-options">
+                            <label class="size-option">
+                                <input type="checkbox"> P
+                            </label>
+                            <label class="size-option">
+                                <input type="checkbox"> M
+                            </label>
+                            <label class="size-option">
+                                <input type="checkbox"> G
+                            </label>
+                            <label class="size-option">
+                                <input type="checkbox"> GG
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Cores</h3>
+                        <div class="color-options">
+                            <span class="color-option" style="background: #000;"></span>
+                            <span class="color-option" style="background: #fff; border: 1px solid #ddd;"></span>
+                            <span class="color-option" style="background: #0a1f36;"></span>
+                            <span class="color-option" style="background: #4a8ac8;"></span>
+                            <span class="color-option" style="background: #64748b;"></span>
+                        </div>
+                    </div>
+
+
+
+                </aside>
+                
+                <main class="products-main">
+                    <div class="products-header">
+                        <p class="products-count">Mostrando 12 de 48 produtos</p>
+                        <div class="sort-options">
+                            <label for="sort">Ordenar por:</label>
+                            <select id="sort" class="sort-select">
+                                <option value="recent">Mais Recentes</option>
+                                <option value="price-low">Menor Preço</option>
+                                <option value="price-high">Maior Preço</option>
+                                <option value="popular">Mais Populares</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid-page">
+                        
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (10).jpg" alt="Camiseta Esportiva Vixel Sport 1">
+                                <div class="product-badge">Novo</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Performance</h3>
+                                <div class="product-price">R$ 59,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                       
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (1).jpg" alt="Tênis Esportivo Vixel Sport 1">
+                                <div class="product-badge">Lançamento</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Runner Pro</h3>
+                                <div class="product-price">R$ 149,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 1 (1).jpg" alt="Acessório Esportivo Vixel Sport 1">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Mochila Esportiva</h3>
+                                <div class="product-price">R$ 89,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="shorts">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/shorts masc/Shorts Esportivos Vixel Sport (1).jpg" alt="Short Esportivo Vixel Sport 1">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Shorts</div>
+                                <h3 class="product-title">Short Training</h3>
+                                <div class="product-price">R$ 49,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport Adicionais (2).jpg " alt="Camiseta Esportiva Vixel Sport 2">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Dry Fit</h3>
+                                <div class="product-price">R$ 54,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                     
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (2).jpg" alt="Tênis Esportivo Vixel Sport 2">
+                                <div class="product-badge">Popular</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Urban</h3>
+                                <div class="product-price">R$ 129,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 1 (2).jpg" alt="Acessório Esportivo Vixel Sport 2">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Boné Trucker</h3>
+                                <div class="product-price">R$ 39,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                       
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (3).jpg" alt="Camiseta Esportiva Vixel Sport 3">
+                                <div class="product-badge">Mais Vendido</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Pro</h3>
+                                <div class="product-price">R$ 69,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                      
+                        <div class="product-card fade-in" data-category="shorts">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/shorts masc/Shorts Esportivos Vixel Sport (2).jpg" alt="Short Esportivo Vixel Sport 2">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Shorts</div>
+                                <h3 class="product-title">Short Runner</h3>
+                                <div class="product-price">R$ 54,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                     
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (3).jpg" alt="Tênis Esportivo Vixel Sport 3">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Trail</h3>
+                                <div class="product-price">R$ 169,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 1 (3).jpg" alt="Acessório Esportivo Vixel Sport 3">
+                                <div class="product-badge">Novo</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Garrafa Térmica</h3>
+                                <div class="product-price">R$ 29,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (4).jpg" alt="Camiseta Esportiva Vixel Sport 4">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Basic</h3>
+                                <div class="product-price">R$ 49,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                     
+                        <div class="product-card fade-in" data-category="shorts">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/shorts masc/Shorts Esportivos Vixel Sport (3).jpg" alt="Short Esportivo Vixel Sport 3">
+                                <div class="product-badge">Limited</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Shorts</div>
+                                <h3 class="product-title">Short Premium</h3>
+                                <div class="product-price">R$ 64,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (4).jpg" alt="Tênis Esportivo Vixel Sport 4">
+                                <div class="product-badge">Promoção</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Casual</h3>
+                                <div class="product-price">R$ 119,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 1 (4).jpg" alt="Acessório Esportivo Vixel Sport 4">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Carteira Esportiva</h3>
+                                <div class="product-price">R$ 24,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (5).jpg" alt="Camiseta Esportiva Vixel Sport 5">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Active</h3>
+                                <div class="product-price">R$ 59,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (5).jpg" alt="Tênis Esportivo Vixel Sport 5">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Fitness</h3>
+                                <div class="product-price">R$ 139,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 1 (5).jpg" alt="Acessório Esportivo Vixel Sport 5">
+                                <div class="product-badge">Oferta</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Toalha Esportiva</h3>
+                                <div class="product-price">R$ 19,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                      
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (6).jpg" alt="Camiseta Esportiva Vixel Sport 6">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Tech</h3>
+                                <div class="product-price">R$ 64,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (6).jpg" alt="Tênis Esportivo Vixel Sport 6">
+                                <div class="product-badge">Destaque</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Cross</h3>
+                                <div class="product-price">R$ 159,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 1 (6).jpg" alt="Acessório Esportivo Vixel Sport 6">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Squeeze Sport</h3>
+                                <div class="product-price">R$ 19,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (7).jpg" alt="Camiseta Esportiva Vixel Sport 7">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Ultra</h3>
+                                <div class="product-price">R$ 79,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (7).jpg" alt="Tênis Esportivo Vixel Sport 7">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Pro</h3>
+                                <div class="product-price">R$ 199,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (7).jpg" alt="Acessório Esportivo Vixel Sport 7">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Necessaire</h3>
+                                <div class="product-price">R$ 34,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                       
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (8).jpg" alt="Camiseta Esportiva Vixel Sport 8">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Flex</h3>
+                                <div class="product-price">R$ 54,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                      
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (8).jpg" alt="Tênis Esportivo Vixel Sport 8">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Light</h3>
+                                <div class="product-price">R$ 129,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                       
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (8).jpg" alt="Acessório Esportivo Vixel Sport 8">
+                                <div class="product-badge">Novo</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Cinto Esportivo</h3>
+                                <div class="product-price">R$ 39,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                      
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (9).jpg" alt="Camiseta Esportiva Vixel Sport 9">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Air</h3>
+                                <div class="product-price">R$ 59,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                      
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (9).jpg" alt="Tênis Esportivo Vixel Sport 9">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Max</h3>
+                                <div class="product-price">R$ 179,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (9).jpg" alt="Acessório Esportivo Vixel Sport 9">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Pulseira Sport</h3>
+                                <div class="product-price">R$ 14,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport (10).jpg" alt="Camiseta Esportiva Vixel Sport 10">
+                                <div class="product-badge">Exclusivo</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Limited</h3>
+                                <div class="product-price">R$ 79,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (1).jpg" alt="Tênis Esportivo Vixel Sport 10">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Elite</h3>
+                                <div class="product-price">R$ 219,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (5).jpg" alt="Acessório Esportivo Vixel Sport 10">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Kit Viagem</h3>
+                                <div class="product-price">R$ 64,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="camisetas">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/camisas masc/Camisetas Esportivas Vixel Sport.jpg" alt="Camiseta Vasco">
+                                <div class="product-badge">Edição Especial</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Camisetas</div>
+                                <h3 class="product-title">Camiseta Vasco</h3>
+                                <div class="product-price">R$ 99,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais (2).jpg" alt="Tênis Esportivo Vixel Sport Adicional 2">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Street</h3>
+                                <div class="product-price">R$ 139,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (1).jpg" alt="Acessório Esportivo Vixel Sport 11">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Meias Técnicas</h3>
+                                <div class="product-price">R$ 19,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais (3).jpg" alt="Tênis Esportivo Vixel Sport Adicional 3">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Urban Pro</h3>
+                                <div class="product-price">R$ 159,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (2).jpg" alt="Acessório Esportivo Vixel Sport 12">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Protetor Solar</h3>
+                                <div class="product-price">R$ 24,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport (4).jpg " alt="Tênis Esportivo Vixel Sport Adicional 4">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Performance</h3>
+                                <div class="product-price">R$ 189,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (3).jpg" alt="Acessório Esportivo Vixel Sport 13">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Bolsa Térmica</h3>
+                                <div class="product-price">R$ 59,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais (5).jpg" alt="Tênis Esportivo Vixel Sport Adicional 5">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Skate</h3>
+                                <div class="product-price">R$ 139,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (4).jpg" alt="Acessório Esportivo Vixel Sport 14">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Óculos Esportivo</h3>
+                                <div class="product-price">R$ 89,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais (6).jpg" alt="Tênis Esportivo Vixel Sport Adicional 6">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Running</h3>
+                                <div class="product-price">R$ 159,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (5).jpg" alt="Acessório Esportivo Vixel Sport 15">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Relógio Esportivo</h3>
+                                <div class="product-price">R$ 149,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais (7).jpg" alt="Tênis Esportivo Vixel Sport Adicional 7">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Hiking</h3>
+                                <div class="product-price">R$ 199,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="acessorios">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/acessorios masc/Acessórios Esportivos Vixel Sport Parte 2 (9).jpg" alt="Acessório Esportivo Vixel Sport 16">
+                                <div class="product-badge">Limited</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Acessórios</div>
+                                <h3 class="product-title">Kit Treino</h3>
+                                <div class="product-price">R$ 109,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais (8).jpg" alt="Tênis Esportivo Vixel Sport Adicional 8">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Casual Pro</h3>
+                                <div class="product-price">R$ 129,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                         
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais (9).jpg" alt="Tênis Esportivo Vixel Sport Adicional 9">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Flex</h3>
+                                <div class="product-price">R$ 149,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="product-card fade-in" data-category="tenis">
+                            <div class="product-image">
+                                <img src="Imagens do Site/Produtos masc/tenis masc/Tênis Esportivos Vixel Sport Adicionais.jpg" alt="Tênis Esportivo Vixel Sport Adicional 10">
+                                <div class="product-badge">Novo</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-category">Tênis</div>
+                                <h3 class="product-title">Tênis Ultimate</h3>
+                                <div class="product-price">R$ 239,90</div>
+                                <div class="product-actions">
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                    <a href="#" class="btn btn-secondary">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </main>
+            </div>
+        </div>
+    </section>
+
+     
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Vixel Sports</h3>
+                    <p>Performance, tecnologia e estilo em cada peça. Elevamos seu potencial com roupas esportivas de alta qualidade.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Produtos</h3>
+                    <ul class="footer-links">
+                        <li><a href="produtos.html">Masculino</a></li>
+                        <li><a href="produtosfm.html">Feminino</a></li>
+                        <li><a href="promocoes.html">Promoções</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Coleções</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="contate-nos.html">Contato</a></li>
+                        <li><a href="perguntas.html">Dúvidas Frequentes</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Entregas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 98109-7803</li>
+                        <li><i class="fas fa-envelope"></i> contato@vixelsports.com</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 9h-18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vixel Sports. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

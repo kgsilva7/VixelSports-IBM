@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Vixel Sports</title>
+    <link rel="stylesheet" href="styles/pagamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="Imagens do Site/logo/logo_vixel-removebg-preview.png" alt="Vixel Sports">
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Produtos <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="produtos.html" class="dropdown-item">Masculino</a>
+                            <a href="produtosfm.html" class="dropdown-item">Feminino</a>
+                            <a href="promocoes.html" class="dropdown-item">Promoções</a>
+                        </div>
+                    </li>
+                    <li><a href="sobrenos.html" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="contate-nos.html" class="nav-link">Contato</a></li>
+                    <li><a href="perguntas.html" class="nav-link">Dúvidas</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                </div>
+                <a href="login.html" class="action-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="carrinho.html" class="action-icon" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-header">
+                <h1 class="page-title">Finalizar Pedido</h1>
+                <div class="checkout-steps">
+                    <div class="checkout-step active">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Carrinho</span>
+                    </div>
+                    <div class="checkout-step active">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Entrega</span>
+                    </div>
+                    <div class="checkout-step active">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Pagamento</span>
+                    </div>
+                    <div class="checkout-step">
+                        <span class="step-number">4</span>
+                        <span class="step-text">Confirmação</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checkout-layout">
+                <div class="checkout-main">
+                    
+                    <div class="payment-section fade-in">
+                        <h2 class="section-title">Forma de Pagamento</h2>
+                        
+                        <div class="payment-methods">
+                            <div class="payment-method active" data-method="credit">
+                                <div class="method-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Cartão de Crédito</h3>
+                                    <p>Parcelamento em até 12x sem juros</p>
+                                </div>
+                                <i class="fas fa-check method-check"></i>
+                            </div>
+                            
+                            <div class="payment-method" data-method="pix">
+                                <div class="method-icon">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>PIX</h3>
+                                    <p>5% de desconto - Pagamento instantâneo</p>
+                                </div>
+                                <i class="fas fa-check method-check"></i>
+                            </div>
+                            
+                            <div class="payment-method" data-method="debit">
+                                <div class="method-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Cartão de Débito</h3>
+                                    <p>Pagamento à vista no débito</p>
+                                </div>
+                                <i class="fas fa-check method-check"></i>
+                            </div>
+                            
+                            <div class="payment-method" data-method="boleto">
+                                <div class="method-icon">
+                                    <i class="fas fa-barcode"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Boleto Bancário</h3>
+                                    <p>Pagamento em até 2 dias úteis</p>
+                                </div>
+                                <i class="fas fa-check method-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     
+                    <div class="payment-form fade-in" id="creditCardForm">
+                        <h3>Dados do Cartão</h3>
+                        
+                        <form class="form" id="creditCardForm">
+                            <div class="form-group">
+                                <label for="cardNumber">Número do Cartão</label>
+                                <input type="text" id="cardNumber" name="cardNumber" required placeholder="0000 0000 0000 0000" maxlength="19">
+                                <div class="card-icons">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-amex"></i>
+                                    <i class="fab fa-cc-diners-club"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cardName">Nome no Cartão</label>
+                                    <input type="text" id="cardName" name="cardName" required placeholder="Como está no cartão">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="cardCvv">CVV</label>
+                                    <input type="text" id="cardCvv" name="cardCvv" required placeholder="000" maxlength="3">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cardExpiry">Validade</label>
+                                    <input type="text" id="cardExpiry" name="cardExpiry" required placeholder="MM/AA" maxlength="5">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="cardInstallments">Parcelas</label>
+                                    <select id="cardInstallments" name="cardInstallments" required>
+                                        <option value="">Selecione</option>
+                                        <option value="1">1x R$ 249,90 sem juros</option>
+                                        <option value="2">2x R$ 124,95 sem juros</option>
+                                        <option value="3">3x R$ 83,30 sem juros</option>
+                                        <option value="4">4x R$ 62,48 sem juros</option>
+                                        <option value="5">5x R$ 49,98 sem juros</option>
+                                        <option value="6">6x R$ 41,65 sem juros</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                     
+                    <div class="payment-form" id="pixForm" style="display: none;">
+                        <h3>Pagamento via PIX</h3>
+                        <div class="pix-info">
+                            <div class="pix-qr-code">
+                                <div class="qr-placeholder">
+                                    <i class="fas fa-qrcode"></i>
+                                    <p>QR Code será gerado após a confirmação</p>
+                                </div>
+                            </div>
+                            <div class="pix-details">
+                                <h4>Chave PIX Copia e Cola</h4>
+                                <div class="pix-key">
+                                    <code>00020126580014br.gov.bcb.pix0136a1b2c3d4-e5f6-7890-1234-567890abcdef5204000053039865406249.905802BR5913Vixel Sports6008Sao Paulo62070503***6304A1B2</code>
+                                    <button class="btn btn-secondary btn-copy">
+                                        <i class="fas fa-copy"></i> Copiar
+                                    </button>
+                                </div>
+                                <p class="pix-instructions">
+                                    <i class="fas fa-info-circle"></i>
+                                    O código PIX expira em 30 minutos. Após o pagamento, seu pedido será confirmado automaticamente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     
+                    <div class="address-section fade-in">
+                        <h2 class="section-title">Endereço de Entrega</h2>
+                        <div class="address-card">
+                            <div class="address-info">
+                                <h4>Carlos Silva</h4>
+                                <p>Av. Paulista, 1000 - Jardim Paulista<br>São Paulo - SP, 01310-100</p>
+                                <p>Telefone: (11) 99999-9999</p>
+                            </div>
+                            <button class="btn btn-secondary">Alterar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                <aside class="order-summary">
+                    <div class="summary-card">
+                        <h3>Resumo do Pedido</h3>
+                        
+                        <div class="order-items">
+                            <div class="order-item">
+                                <div class="item-info">
+                                    <h4>Camiseta Performance</h4>
+                                    <p>Quantidade: 1 • Tamanho: M</p>
+                                </div>
+                                <div class="item-price">R$ 89,90</div>
+                            </div>
+                            
+                            <div class="order-item">
+                                <div class="item-info">
+                                    <h4>Tênis Running Pro</h4>
+                                    <p>Quantidade: 1 • Tamanho: 42</p>
+                                </div>
+                                <div class="item-price">R$ 249,90</div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-totals">
+                            <div class="total-line">
+                                <span>Subtotal</span>
+                                <span>R$ 339,80</span>
+                            </div>
+                            <div class="total-line">
+                                <span>Frete</span>
+                                <span>Grátis</span>
+                            </div>
+                            <div class="total-line">
+                                <span>Desconto</span>
+                                <span>- R$ 0,00</span>
+                            </div>
+                            <div class="total-line grand-total">
+                                <span>Total</span>
+                                <span>R$ 339,80</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full" id="confirmPayment">
+                            <i class="fas fa-lock"></i> Finalizar Pedido
+                        </button>
+                        
+                        <p class="security-notice">
+                            <i class="fas fa-shield-alt"></i>
+                            Sua compra está protegida por criptografia SSL
+                        </p>
+                    </div>
+                    
+                    <div class="security-features">
+                        <div class="security-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Entrega Garantida</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-undo"></i>
+                            <span>Troca Fácil</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Pagamento Seguro</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+ 
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Vixel Sports</h3>
+                    <p>Performance, tecnologia e estilo em cada peça. Elevamos seu potencial com roupas esportivas de alta qualidade.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Produtos</h3>
+                    <ul class="footer-links">
+                        <li><a href="produtos.html">Masculino</a></li>
+                        <li><a href="produtosfm.html">Feminino</a></li>
+                        <li><a href="promocoes.html">Promoções</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Coleções</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="contate-nos.html">Contato</a></li>
+                        <li><a href="perguntas.html">Dúvidas Frequentes</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Entregas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 98109-7803</li>
+                        <li><i class="fas fa-envelope"></i> contato@vixelsports.com</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 9h-18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vixel Sports. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        
+        const paymentMethods = document.querySelectorAll('.payment-method');
+        
+        paymentMethods.forEach(method => {
+            method.addEventListener('click', () => {
+                
+                paymentMethods.forEach(m => m.classList.remove('active'));
+                
+                 
+                method.classList.add('active');
+                
+                 
+                const methodType = method.dataset.method;
+                document.querySelectorAll('.payment-form').forEach(form => {
+                    form.style.display = 'none';
+                });
+                
+                if (methodType === 'credit') {
+                    document.getElementById('creditCardForm').style.display = 'block';
+                } else if (methodType === 'pix') {
+                    document.getElementById('pixForm').style.display = 'block';
+                }
+            });
+        });
+        
+         
+        const cardNumber = document.getElementById('cardNumber');
+        cardNumber?.addEventListener('input', function() {
+            let value = this.value.replace(/\D/g, '');
+            value = value.replace(/(\d{4})/g, '$1 ').trim();
+            this.value = value.substring(0, 19);
+        });
+        
+        
+        const cardExpiry = document.getElementById('cardExpiry');
+        cardExpiry?.addEventListener('input', function() {
+            let value = this.value.replace(/\D/g, '');
+            if (value.length >= 2) {
+                value = value.substring(0, 2) + '/' + value.substring(2, 4);
+            }
+            this.value = value.substring(0, 5);
+        });
+        
+         
+        const copyButton = document.querySelector('.btn-copy');
+        copyButton?.addEventListener('click', () => {
+            const pixKey = document.querySelector('.pix-key code').textContent;
+            navigator.clipboard.writeText(pixKey).then(() => {
+                const originalText = copyButton.innerHTML;
+                copyButton.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                setTimeout(() => {
+                    copyButton.innerHTML = originalText;
+                }, 2000);
+            });
+        });
+        
+         
+        const confirmPayment = document.getElementById('confirmPayment');
+        confirmPayment?.addEventListener('click', () => {
+             
+            confirmPayment.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processando...';
+            confirmPayment.disabled = true;
+            
+            setTimeout(() => {
+                window.location.href = 'confirmacao.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

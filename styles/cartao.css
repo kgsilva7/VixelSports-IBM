@@ -1,0 +1,213 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    min-height: 100vh;
+    background: #dbefff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.container form {
+    background: #000;  
+    border-radius: 15px;  
+    box-shadow: 0 10px 15px rgba(0,0,0.1);
+    padding: 20px;
+    width: 600px;
+    margin-top: 20px;
+    color: #fff; 
+}
+
+.container form .inputbox {
+    margin-top: 20px;
+}
+
+.container form .inputbox span {
+    display: block;
+    color: #ccc;  
+    padding-bottom: 5px;
+}
+
+.container form .inputbox input,
+.container form .inputbox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);  
+    color: #fff;  
+    background-color: #333;  
+}
+
+.container form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .flexbox .inputbox {
+    flex: 1 1 150px;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(7, 32, 53), rgb(2, 99, 211));
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 15px;  
+    padding: 10px;
+    color: #dee6f3;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.container .card-container {
+    margin-top: 20px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container .card-container .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(10, 50, 83), rgb(52, 225, 255));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgb(2, 16, 27);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+.container .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.container .card-container .front .image img {
+    height: 50px;
+}
+
+.container .card-container .front .card-number-box {
+    font-size: 22px;
+    color: #dee6f3;
+}
+
+.container .card-container .front .flexbox {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.container .card-container .front .box {
+    font-size: 15px;
+    color: #f0f3f8;
+}
+
+.container .card-container .front .box .expiration {
+    display: flex;
+    gap: 5px;
+}
+
+.container .card-container .front .expires-box {
+    text-align: right; 
+}
+
+.container .card-container .back {
+    position: absolute;
+    top: 0;left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(10, 50, 83), rgb(52, 225, 255));
+    border-radius:5px ;
+    padding:20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba( #131a25);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.container .card-container .back .stripe {
+    background: #131a25;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+
+
+.container .card-container .back .box {
+  padding: 0 20px;
+}
+
+
+.container .card-container .back .box span {
+   color: aliceblue;
+   font-size: 15px;
+  }
+  
+  
+.container .card-container .back .box .cvv-box {
+   height: 50px;
+   padding: 10px;
+   margin-top:5px ;
+   color: #333;
+   background: aliceblue;
+   border-radius: 5px;
+   width: 100%;
+   }
+
+   
+.container .card-container .back .box  img {
+    margin-top: 30px; 
+    height:30px ;
+   }
+   
+   @media (max-width: 700px) {
+  
+    .container .card-container {
+        display: none;
+    }
+
+    
+    .container form .flexbox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container form .inputbox {
+        width: 100%;
+    }
+
+     
+    .container form .submit-btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+   
+
