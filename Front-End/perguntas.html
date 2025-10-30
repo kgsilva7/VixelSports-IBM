@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas Frequentes - Vixel Sports</title>
+    <link rel="stylesheet" href="styles/perguntas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+     
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="Imagens do Site/logo/logo_vixel-removebg-preview.png" alt="Vixel Sports">
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Produtos <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="produtos.html" class="dropdown-item">Masculino</a>
+                            <a href="produtosfm.html" class="dropdown-item">Feminino</a>
+                            <a href="promocoes.html" class="dropdown-item">Promoções</a>
+                        </div>
+                    </li>
+                    <li><a href="sobrenos.html" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="contate-nos.html" class="nav-link">Contato</a></li>
+                    <li><a href="perguntas.html" class="nav-link active">Dúvidas</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                </div>
+                <a href="login.html" class="action-icon">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="carrinho.html" class="action-icon" id="cartIcon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="faq-hero">
+        <div class="container">
+            <div class="faq-header">
+                <h1 class="page-title">Dúvidas Frequentes</h1>
+                <p class="page-subtitle">Encontre respostas para as perguntas mais comuns</p>
+                
+                <div class="search-faq">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar nas dúvidas..." class="faq-search">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+    <section class="section faq-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <a href="#pedidos" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Pedidos</h3>
+                    <p>Dúvidas sobre compras e entregas</p>
+                </a>
+                
+                <a href="#pagamentos" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Pagamentos</h3>
+                    <p>Formas de pagamento e segurança</p>
+                </a>
+                
+                <a href="#trocas" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Trocas & Devoluções</h3>
+                    <p>Política de trocas e devoluções</p>
+                </a>
+                
+                <a href="#produtos" class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Produtos</h3>
+                    <p>Informações sobre produtos</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section faq-content">
+        <div class="container">
+            
+            <div class="faq-section" id="pedidos">
+                <h2 class="section-title">Pedidos e Entregas</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Qual o prazo de entrega?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Para a capital de São Paulo: 48 horas úteis. Para demais regiões: 5-7 dias úteis. O prazo começa a contar a partir da confirmação do pagamento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Como rastrear meu pedido?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Após a postagem, enviaremos o código de rastreamento por e-mail. Você também pode acompanhar pelo "Meus Pedidos" em sua conta.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Posso alterar o endereço de entrega?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim, desde que o pedido ainda não tenha sido enviado. Entre em contato conosco o mais rápido possível pelo WhatsApp (11) 98109-7803.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="faq-section" id="pagamentos">
+                <h2 class="section-title">Pagamentos</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Quais formas de pagamento são aceitas?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Aceitamos cartão de crédito (até 12x), débito, PIX (5% de desconto) e boleto bancário.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>O site é seguro para compras?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim, utilizamos certificado SSL e todas as transações são processadas em ambiente seguro. Seus dados estão protegidos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Como funciona o parcelamento?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Parcelamos em até 12x sem juros no cartão para compras acima de R$ 100. O valor mínimo da parcela é R$ 20,00.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             
+            <div class="faq-section" id="trocas">
+                <h2 class="section-title">Trocas e Devoluções</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Qual o prazo para troca?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Você tem 30 dias corridos a partir da data de recebimento para solicitar a troca. O produto deve estar em perfeito estado, com etiqueta e na embalagem original.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Como solicitar uma troca?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Acesse "Minha Conta" → "Meus Pedidos" e clique em "Solicitar Troca". Ou entre em contato pelo WhatsApp (11) 98109-7803.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">
+                            <h3>Quem paga o frete da troca?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Em caso de defeito ou engano nosso, nós arcamos com os custos. Para trocas por arrependimento, o frete é por conta do cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section help-section">
+        <div class="container">
+            <div class="help-content">
+                <h2 class="section-title">Ainda precisa de ajuda?</h2>
+                <p class="section-subtitle">Nossa equipe está pronta para atendê-lo</p>
+                
+                <div class="help-options">
+                    <div class="help-option fade-in">
+                        <div class="help-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Chat Online</h3>
+                        <p>Atendimento rápido pelo chat</p>
+                        <a href="#" class="btn btn-primary">Iniciar Chat</a>
+                    </div>
+                    
+                    <div class="help-option fade-in">
+                        <div class="help-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>(11) 98109-7803</p>
+                        <a href="https://wa.me/5511981097803" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enviar Mensagem
+                        </a>
+                    </div>
+                    
+                    <div class="help-option fade-in">
+                        <div class="help-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>suporte@vixelsports.com</p>
+                        <a href="mailto:suporte@vixelsports.com" class="btn btn-primary">Enviar E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Vixel Sports</h3>
+                    <p>Performance, tecnologia e estilo em cada peça. Elevamos seu potencial com roupas esportivas de alta qualidade.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Produtos</h3>
+                    <ul class="footer-links">
+                        <li><a href="produtos.html">Masculino</a></li>
+                        <li><a href="produtosfm.html">Feminino</a></li>
+                        <li><a href="promocoes.html">Promoções</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Coleções</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="contate-nos.html">Contato</a></li>
+                        <li><a href="perguntas.html">Dúvidas Frequentes</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Entregas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 98109-7803</li>
+                        <li><i class="fas fa-envelope"></i> contato@vixelsports.com</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 9h-18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vixel Sports. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+         
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('i').classList.remove('fa-chevron-up');
+                        item.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                 
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+     
+        const faqSearch = document.querySelector('.faq-search');
+        if (faqSearch) {
+            faqSearch.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const faqItems = document.querySelectorAll('.faq-item');
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
